@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nguyen Dinh Thuan, HCMUT, LIC=RC93N-YSTY0-LQX0Q-NM0TU-6WJZ9-CG2GM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\Phanmemhoctap\[Phanmem123.com] Keil C µVision 5 ARM MDK538a\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\LearningCode\Git code\SelfLearning\Personal projects\MyApp\ElectricDeviceControl\MDK-ARM\ElectricDeviceControl.uvprojx
+Project File Date:  06/18/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Phanmemhoctap\[Phanmem123.com] Keil C µVision 5 ARM MDK538a\ARM\ARMCC\Bin'
+Build target 'ElectricDeviceControl'
+compiling main.c...
+../Core/Src/main.c(112): warning:  #223-D: function "strlen" declared implicitly
+  				HAL_UART_Transmit_IT(&huart1, tx_fan, strlen(tx_fan));
+../Core/Src/main.c(113): warning:  #188-D: enumerated type mixed with another type
+          HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 1);
+../Core/Src/main.c(117): warning:  #188-D: enumerated type mixed with another type
+          HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 0);
+../Core/Src/main.c(118): warning:  #223-D: function "strlen" declared implicitly
+  				HAL_UART_Transmit_IT(&huart1, tx_fan_off, strlen(tx_fan_off));
+../Core/Src/main.c(127): warning:  #223-D: function "strlen" declared implicitly
+  				HAL_UART_Transmit_IT(&huart1, tx_light, strlen(tx_light));
+../Core/Src/main.c(128): warning:  #188-D: enumerated type mixed with another type
+          HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, 1);
+../Core/Src/main.c(132): warning:  #188-D: enumerated type mixed with another type
+          HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, 0);
+../Core/Src/main.c(133): warning:  #223-D: function "strlen" declared implicitly
+  				HAL_UART_Transmit_IT(&huart1, tx_light_off, strlen(tx_light_off));
+../Core/Src/main.c(140): warning:  #188-D: enumerated type mixed with another type
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 0);
+../Core/Src/main.c(141): warning:  #188-D: enumerated type mixed with another type
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, 0);
+../Core/Src/main.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=4780 RO-data=312 RW-data=48 ZI-data=1720  
+FromELF: creating hex file...
+"ElectricDeviceControl\ElectricDeviceControl.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_ElectricDeviceControl
+  D:/Phanmemhoctap/[Phanmem123.com] Keil C µVision 5 ARM MDK538a/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Phanmemhoctap/[Phanmem123.com] Keil C µVision 5 ARM MDK538a/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
