@@ -2388,9 +2388,13 @@ void MyApp::SettingUart(void)
 
     serialPort = new QSerialPort();
 
-    // Port
-    QString lsPortName = ui->comboBox_port->currentText();
-    serialPort->setPortName(lsPortName);
+    serialPort->setPortName("COM2");
+    // serialPort->setBaudRate(QSerialPort::BaudRate::Baud9600);
+    // serialPort->setDataBits(QSerialPort::DataBits::Data8);
+
+    // // Port
+    // QString lsPortName = ui->comboBox_port->currentText();
+    // serialPort->setPortName(lsPortName);
 
     // Baudrate
     QString lsStringOfBaudrate = ui->comboBox_Baudrate->currentText();
@@ -2481,6 +2485,7 @@ void MyApp::receiveMessage()
 {
     QByteArray lBADataReceived = serialPort->readAll();
     gsUartDataReceived += (gacCharecterTable[(static_cast<int>(lBADataReceived[lBADataReceived.size() - 1])) - 1]);
+    qDebug() << gsUartDataReceived;
     if (gsUartDataReceived == "fanon")
     {
         gsUartDataReceived = "";
